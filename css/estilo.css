@@ -1,10 +1,42 @@
 body {
-  font-family: 'Georama', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Georama", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
+  background-color: burlywood;
   display: none;
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  vertical-align: middle;
+  width: 100vw;
+  height: 20vh;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu-toggle {
+  height: 10vh;
+  width: 10vh;
+  background-color: brown;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 section {
@@ -15,21 +47,25 @@ section {
 #inicio {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
   text-align: center;
 }
 
 #inicio h1 {
+  font-size: 2.5em;
+  margin: 1rem;
   color: blue;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  -ms-grid-row-span: 3;
+  grid-row: 2 / 5;
+  padding: 1rem;
 }
 
 #inicio div {
-  -ms-grid-row: 3;
-  grid-row: 3 / 3;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  grid-row: 7 / 8;
 }
 
 #inicio div button {
