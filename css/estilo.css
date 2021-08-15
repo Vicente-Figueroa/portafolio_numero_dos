@@ -47,8 +47,8 @@ body {
     color: black;
   }
   #menu-toggle {
-    height: 10vh;
-    width: 10vh;
+    height: 5vh;
+    width: 5vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -125,21 +125,25 @@ body {
     background: transparent;
     margin-top: 40%;
     padding: 0.5em;
-    margin: 2em;
+    margin: 1em 2.2em 1em 2.2em;
     -ms-grid-row: 1;
     grid-row: 1;
   }
+  #presentacion .contenido h2 {
+    font-style: italic;
+    font-size: 1.8em;
+  }
+  #presentacion .contenido p {
+    font-size: 1.2em;
+  }
   #presentacion img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin: auto;
+    display: block;
     width: 30vw;
-    height: 35vh;
+    height: 25vh;
     -ms-grid-row: 2;
     grid-row: 2;
+    margin-bottom: 5vh;
   }
   #presentacion .contenedor {
     width: 100%;
