@@ -1,5 +1,8 @@
 //Funcion de menu de hamburguesa
 
+if (document.readyState === 'complete') {
+  // The page is fully loaded
+}
 function menu() {
   var boton = document.getElementById("menu");
   boton.style.display = "none";
