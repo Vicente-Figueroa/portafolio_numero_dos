@@ -1,7 +1,10 @@
-$primary-color: #4e5572;
-$secondary-color: #3e4894;
+$primary-color: #d48d99;
 
-$font-color: #b0b8db;
+$bg-color: #949fb1;
+$secondary-color: #80788d;
+$terciary-color: #5a6882;
+
+$font-color: #0f131f;
 $font-family-one: "Crimson Text", serif;
 $font-family-two: "Roboto", sans-serif;
 
@@ -15,6 +18,8 @@ $font-family-two: "Roboto", sans-serif;
 }
 
 body {
+  background: url('../img/bg.png');
+
   font-family: "Georama", sans-serif;
   font-family: "Roboto", sans-serif;
   font-family: "Tenali Ramakrishna", sans-serif;
@@ -64,7 +69,7 @@ body {
     
     @include altura();
     font-style: italic;
-    background-color: $primary-color;
+
     color: $font-color;
 
     display: grid;
@@ -73,8 +78,14 @@ body {
     text-align: center;
 
     h1 {
+      -webkit-box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15,19,31,0); 
+box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15,19,31,0);
+      border: solid;
+      border-radius: 10px;
+      margin: 0 1em 1em 1em;
+      background: transparent;
       margin-top: 40%;
-      padding: 1em;
+      padding: .5em;
       font-size: 2.5rem;
       grid-row: 1;
      
@@ -88,11 +99,13 @@ body {
 
         button{
             font-size: 1.2em;
-            border: none;
-            background-color: $secondary-color;
+            color: $terciary-color;
+            border: solid $terciary-color;
+            background-color: transparent;
             height: 3em;
             width: 25%;
             display: flexbox;
+            color: $font-color;
         }
         .contacto{
           margin-top: 1em;
@@ -109,6 +122,8 @@ body {
 
   #presentacion {
     @include altura();
-    background-color: burlywood;
+    color: $font-color;
+
   }
 }
+

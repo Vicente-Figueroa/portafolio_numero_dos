@@ -4,6 +4,7 @@
 }
 
 body {
+  background: url("../img/bg.png");
   font-family: "Georama", sans-serif;
   font-family: "Roboto", sans-serif;
   font-family: "Tenali Ramakrishna", sans-serif;
@@ -61,8 +62,7 @@ body {
     height: 100vh;
     width: 100vw;
     font-style: italic;
-    background-color: #4e5572;
-    color: #b0b8db;
+    color: #0f131f;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (1fr)[2];
@@ -70,8 +70,14 @@ body {
     text-align: center;
   }
   #inicio h1 {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15, 19, 31, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15, 19, 31, 0);
+    border: solid;
+    border-radius: 10px;
+    margin: 0 1em 1em 1em;
+    background: transparent;
     margin-top: 40%;
-    padding: 1em;
+    padding: .5em;
     font-size: 2.5rem;
     -ms-grid-row: 1;
     grid-row: 1;
@@ -83,11 +89,13 @@ body {
   }
   #inicio .contenedor button {
     font-size: 1.2em;
-    border: none;
-    background-color: #3e4894;
+    color: #5a6882;
+    border: solid #5a6882;
+    background-color: transparent;
     height: 3em;
     width: 25%;
     display: flexbox;
+    color: #0f131f;
   }
   #inicio .contenedor .contacto {
     margin-top: 1em;
@@ -101,7 +109,7 @@ body {
   #presentacion {
     height: 100vh;
     width: 100vw;
-    background-color: burlywood;
+    color: #0f131f;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
