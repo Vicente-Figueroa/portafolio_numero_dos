@@ -65,7 +65,15 @@ body {
     right: 0;
     top: 0;
   }
-
+  .inicio-boton {
+    height: 5vh;
+    width: 5vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 5px;
+    top: 0;
+  }
   #inicio {
     @include altura();
     font-style: italic;
