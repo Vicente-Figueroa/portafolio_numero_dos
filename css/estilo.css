@@ -5,6 +5,7 @@
 
 body {
   background: url("../img/bg.png");
+  background-attachment: fixed;
   font-family: "Georama", sans-serif;
   font-family: "Roboto", sans-serif;
   font-family: "Tenali Ramakrishna", sans-serif;
@@ -14,7 +15,7 @@ body {
 @media (max-width: 600px) {
   nav {
     opacity: 0.9;
-    background-color: burlywood;
+    background-color: #d48d99;
     display: none;
     top: 0;
     position: fixed;
@@ -77,7 +78,7 @@ body {
     margin: 0 1em 1em 1em;
     background: transparent;
     margin-top: 40%;
-    padding: .5em;
+    padding: 0.5em;
     font-size: 2.5rem;
     -ms-grid-row: 1;
     grid-row: 1;
@@ -110,6 +111,59 @@ body {
     height: 100vh;
     width: 100vw;
     color: #0f131f;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  #presentacion .contenido {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15, 19, 31, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15, 19, 31, 0);
+    border: solid;
+    border-radius: 10px;
+    background: transparent;
+    margin-top: 40%;
+    padding: 0.5em;
+    margin: 2em;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  #presentacion img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30vw;
+    height: 35vh;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #presentacion .contenedor {
+    width: 100%;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  #presentacion .contenedor button {
+    font-size: 1.2em;
+    color: #5a6882;
+    border: solid #5a6882;
+    background-color: transparent;
+    height: 3em;
+    width: 38%;
+    display: flexbox;
+    color: #0f131f;
+  }
+  #presentacion .contenedor .contacto {
+    margin-top: 1em;
+    width: 100%;
+  }
+  #presentacion .contenedor .contacto button {
+    background-color: transparent;
+    width: 77%;
+    border: solid;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
