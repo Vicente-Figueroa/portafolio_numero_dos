@@ -191,6 +191,7 @@ body {
   }
 
   #contacto{
+    font-family: $font-family-one;
     @include altura;
     display:grid;
     grid-template-rows: 1fr 1fr;
@@ -207,6 +208,7 @@ body {
       background: transparent;
       margin-top: 5%;
       padding: 1.5em;
+      font-size: 1.2em;
       
       }
       .botonera{
@@ -237,6 +239,34 @@ body {
         color: $font-color;
         
       }
+    }
+    .formulario{
+      grid-row: 2;
+      margin-top: 10%;
+      display: flexbox;
+
+      .email{
+        width: 80vw;
+        height: 2em;
+        background-color: transparent;
+        border: solid $font-color;
+        color: black
+      }
+      textarea{
+        height: 3em;
+        width: 80vw;
+        background-color: transparent;
+        border: solid $font-color;
+        color: black;
+      }
+      .submit{
+        width: 30vw;
+        height: 2em;
+        border: solid $font-color;
+        background-color: transparent;
+       
+      }
+   
     }
   }
 }

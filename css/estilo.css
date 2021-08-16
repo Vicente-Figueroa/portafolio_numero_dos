@@ -183,6 +183,7 @@ body {
     border: solid;
   }
   #contacto {
+    font-family: "Crimson Text", serif;
     height: 100vh;
     width: 100vw;
     display: -ms-grid;
@@ -200,6 +201,7 @@ body {
     background: transparent;
     margin-top: 5%;
     padding: 1.5em;
+    font-size: 1.2em;
   }
   #contacto .contenido .botonera button {
     font-size: 1.2em;
@@ -221,6 +223,32 @@ body {
     font-size: 1.2em;
     margin-top: 1em;
     color: #0f131f;
+  }
+  #contacto .formulario {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    margin-top: 10%;
+    display: flexbox;
+  }
+  #contacto .formulario .email {
+    width: 80vw;
+    height: 2em;
+    background-color: transparent;
+    border: solid #0f131f;
+    color: black;
+  }
+  #contacto .formulario textarea {
+    height: 3em;
+    width: 80vw;
+    background-color: transparent;
+    border: solid #0f131f;
+    color: black;
+  }
+  #contacto .formulario .submit {
+    width: 30vw;
+    height: 2em;
+    border: solid #0f131f;
+    background-color: transparent;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
