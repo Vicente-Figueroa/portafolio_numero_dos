@@ -3,10 +3,7 @@
 if (document.readyState === "complete") {
   // The page is fully loaded
 }
-function menu() {
-  var boton = document.getElementById("menu");
-  boton.style.display = "none";
-}
+
 
 function boton() {
   var x = document.getElementById("menu");
