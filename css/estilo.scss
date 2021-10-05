@@ -1,0 +1,301 @@
+$primary-color: #d48d99;
+
+$bg-color: #949fb1;
+$secondary-color: #80788d;
+$terciary-color: #5a6882;
+
+$font-color: #0f131f;
+$font-family-one: "Crimson Text", serif;
+$font-family-two: "Roboto", sans-serif;
+
+@mixin altura {
+  height: 100vh;
+  width: 100vw;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow:auto ;
+  background: url("../img/bg.png");
+  background-attachment: fixed;
+
+  font-family: "Georama", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Tenali Ramakrishna", sans-serif;
+  font-family: "Crimson Text", serif;
+}
+
+@media (max-width: 600px) {
+  nav {
+    opacity: 0.9;
+    background-color: $primary-color;
+   
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 20vh;
+      }
+    }
+
+    a {
+      font-size: 1.2em;
+      text-decoration: none;
+      color: black;
+    }
+  }
+  #menu-toggle {
+    height: 5vh;
+    width: 5vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .inicio-boton {
+    height: 5vh;
+    width: 5vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 5px;
+    top: 0;
+  }
+  #inicio {
+    @include altura();
+    font-style: italic;
+
+    color: $font-color;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+    text-align: center;
+
+    h1 {
+      -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        10px 6px 16px -1px rgba(15, 19, 31, 0);
+      box-shadow: 0px 10px 13px -7px #000000,
+        10px 6px 16px -1px rgba(15, 19, 31, 0);
+      border: solid;
+      border-radius: 10px;
+      margin: 0 1em 1em 1em;
+      background: transparent;
+      margin-top: 40%;
+      padding: 0.5em;
+      font-size: 2.5rem;
+      grid-row: 1;
+    }
+
+    .contenedor {
+      width: 100%;
+      grid-row: 2;
+
+      button {
+        font-size: 1.2em;
+        color: $terciary-color;
+        border: solid $terciary-color;
+        background-color: transparent;
+        height: 3em;
+        width: 25%;
+        display: flexbox;
+        color: $font-color;
+      }
+      .contacto {
+        margin-top: 1em;
+        width: 100%;
+        button {
+          background-color: transparent;
+          width: 77%;
+          border: solid;
+        }
+      }
+    }
+  }
+
+  #presentacion {
+    @include altura();
+    color: $font-color;
+
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    .contenido {
+      -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        10px 6px 16px -1px rgba(15, 19, 31, 0);
+      box-shadow: 0px 10px 13px -7px #000000,
+        10px 6px 16px -1px rgba(15, 19, 31, 0);
+      border: solid;
+      border-radius: 10px;
+
+      background: transparent;
+      margin-top: 40%;
+      padding: 0.5em;
+      margin: 1em 2.2em 1em 2.2em;
+      grid-row: 1;
+      h2 {
+        font-style: italic;
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+    img {
+      margin: auto;
+      display: block;
+
+      width: 30vw;
+      height: 25vh;
+      grid-row: 2;
+      margin-bottom: 5vh;
+    }
+    .contenedor {
+      width: 100%;
+      grid-row: 3;
+
+      button {
+        font-size: 1.2em;
+        color: $terciary-color;
+        border: solid $terciary-color;
+        background-color: transparent;
+        height: 3em;
+        width: 38%;
+        display: flexbox;
+        color: $font-color;
+      }
+      .contacto {
+        margin-bottom: 1em;
+        width: 100%;
+        button {
+          background-color: transparent;
+          width: 50%;
+          border: solid;
+        }
+      }
+    }
+  }
+
+  #contacto{
+    font-family: $font-family-one;
+    @include altura;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    .contenido{
+      p{
+        -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        10px 6px 16px -1px rgba(15, 19, 31, 0);
+      box-shadow: 0px 10px 13px -7px #000000,
+        10px 6px 16px -1px rgba(15, 19, 31, 0);
+      border: solid;
+      border-radius: 10px;
+      margin: 0 2em 1em 2em;
+      background: transparent;
+      margin-top: 5%;
+      padding: 1.5em;
+      font-size: 1.2em;
+      
+      }
+      .botonera{
+        
+        button{
+        font-size: 1.2em;
+        color: $terciary-color;
+        border: solid $terciary-color;
+        background-color: transparent;
+        height: 3em;
+        width: 40%;
+       font-size: 1.2em;
+     
+        color: $font-color;
+        }
+        
+      }
+      .portafolio{
+       
+          font-size: 1.2em;
+        color: $terciary-color;
+        border: solid $font-color;
+        background-color: transparent;
+        height: 3em;
+        width: 80%;
+       font-size: 1.2em;
+        margin-top: 1em;
+        color: $font-color;
+        
+      }
+    }
+    .formulario{
+      grid-row: 2;
+      margin-top: 10%;
+      display: flexbox;
+
+      .email{
+        width: 80vw;
+        height: 2em;
+        background-color: transparent;
+        border: solid $font-color;
+        color: black
+      }
+      textarea{
+        height: 3em;
+        width: 80vw;
+        background-color: transparent;
+        border: solid $font-color;
+        color: black;
+      }
+      .submit{
+        width: 30vw;
+        height: 2em;
+        border: solid $font-color;
+        background-color: transparent;
+       
+      }
+   
+    }
+  }
+}
+
+@media (min-width: 601px) {
+body{
+  text-align: center;
+}
+nav{
+ 
+  text-align: center;
+  background-color: $secondary-color;
+  height: 100%;
+  position: fixed;
+
+  right: 0;
+  width: 20%;
+  ul{ list-style-type: none;
+    margin-top: 4em;
+  }
+  li{
+    height: 5em;
+  }
+}
+#menu-toggle{
+  position: fixed;
+  right: 0;
+  margin: 2em;
+}
+  
+}

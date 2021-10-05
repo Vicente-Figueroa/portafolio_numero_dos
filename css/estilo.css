@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: auto;
+  background: url("../img/bg.png");
+  background-attachment: fixed;
+  font-family: "Georama", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Tenali Ramakrishna", sans-serif;
+  font-family: "Crimson Text", serif;
+}
+
+@media (max-width: 600px) {
+  nav {
+    opacity: 0.9;
+    background-color: #d48d99;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+    height: 20vh;
+  }
+  nav a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+  }
+  #menu-toggle {
+    height: 5vh;
+    width: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .inicio-boton {
+    height: 5vh;
+    width: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    left: 5px;
+    top: 0;
+  }
+  #inicio {
+    height: 100vh;
+    width: 100vw;
+    font-style: italic;
+    color: #0f131f;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+  }
+  #inicio h1 {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15, 19, 31, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15, 19, 31, 0);
+    border: solid;
+    border-radius: 10px;
+    margin: 0 1em 1em 1em;
+    background: transparent;
+    margin-top: 40%;
+    padding: 0.5em;
+    font-size: 2.5rem;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  #inicio .contenedor {
+    width: 100%;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #inicio .contenedor button {
+    font-size: 1.2em;
+    color: #5a6882;
+    border: solid #5a6882;
+    background-color: transparent;
+    height: 3em;
+    width: 25%;
+    display: flexbox;
+    color: #0f131f;
+  }
+  #inicio .contenedor .contacto {
+    margin-top: 1em;
+    width: 100%;
+  }
+  #inicio .contenedor .contacto button {
+    background-color: transparent;
+    width: 77%;
+    border: solid;
+  }
+  #presentacion {
+    height: 100vh;
+    width: 100vw;
+    color: #0f131f;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  #presentacion .contenido {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15, 19, 31, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15, 19, 31, 0);
+    border: solid;
+    border-radius: 10px;
+    background: transparent;
+    margin-top: 40%;
+    padding: 0.5em;
+    margin: 1em 2.2em 1em 2.2em;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  #presentacion .contenido h2 {
+    font-style: italic;
+    font-size: 1.8em;
+  }
+  #presentacion .contenido p {
+    font-size: 1.2em;
+  }
+  #presentacion img {
+    margin: auto;
+    display: block;
+    width: 30vw;
+    height: 25vh;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    margin-bottom: 5vh;
+  }
+  #presentacion .contenedor {
+    width: 100%;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  #presentacion .contenedor button {
+    font-size: 1.2em;
+    color: #5a6882;
+    border: solid #5a6882;
+    background-color: transparent;
+    height: 3em;
+    width: 38%;
+    display: flexbox;
+    color: #0f131f;
+  }
+  #presentacion .contenedor .contacto {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  #presentacion .contenedor .contacto button {
+    background-color: transparent;
+    width: 50%;
+    border: solid;
+  }
+  #contacto {
+    font-family: "Crimson Text", serif;
+    height: 100vh;
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    text-align: center;
+  }
+  #contacto .contenido p {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15, 19, 31, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 10px 6px 16px -1px rgba(15, 19, 31, 0);
+    border: solid;
+    border-radius: 10px;
+    margin: 0 2em 1em 2em;
+    background: transparent;
+    margin-top: 5%;
+    padding: 1.5em;
+    font-size: 1.2em;
+  }
+  #contacto .contenido .botonera button {
+    font-size: 1.2em;
+    color: #5a6882;
+    border: solid #5a6882;
+    background-color: transparent;
+    height: 3em;
+    width: 40%;
+    font-size: 1.2em;
+    color: #0f131f;
+  }
+  #contacto .contenido .portafolio {
+    font-size: 1.2em;
+    color: #5a6882;
+    border: solid #0f131f;
+    background-color: transparent;
+    height: 3em;
+    width: 80%;
+    font-size: 1.2em;
+    margin-top: 1em;
+    color: #0f131f;
+  }
+  #contacto .formulario {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    margin-top: 10%;
+    display: flexbox;
+  }
+  #contacto .formulario .email {
+    width: 80vw;
+    height: 2em;
+    background-color: transparent;
+    border: solid #0f131f;
+    color: black;
+  }
+  #contacto .formulario textarea {
+    height: 3em;
+    width: 80vw;
+    background-color: transparent;
+    border: solid #0f131f;
+    color: black;
+  }
+  #contacto .formulario .submit {
+    width: 30vw;
+    height: 2em;
+    border: solid #0f131f;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 601px) {
+  body {
+    text-align: center;
+  }
+  nav {
+    text-align: center;
+    background-color: #80788d;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    width: 20%;
+  }
+  nav ul {
+    list-style-type: none;
+    margin-top: 4em;
+  }
+  nav li {
+    height: 5em;
+  }
+  #menu-toggle {
+    position: fixed;
+    right: 0;
+    margin: 2em;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
